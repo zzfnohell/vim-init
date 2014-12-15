@@ -35,4 +35,4 @@ endfun
 call SetupVAM()
 
 " OPTION 1, use VAMActivate
-VAMActivate 'vim-pi' 'vim-fugitive'
+VAMActivate fugitive
