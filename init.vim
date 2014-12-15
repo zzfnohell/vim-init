@@ -11,6 +11,7 @@ set shiftwidth=4
 set softtabstop=4
 set foldmethod=syntax
 set hlsearch hls
+set number 
 
 fun! SetupVAM()
   let c = get(g:, 'vim_addon_manager', {})
@@ -36,3 +37,6 @@ call SetupVAM()
 
 " OPTION 1, use VAMActivate
 VAMActivate fugitive
+VAMActivate AutoComplPop
+VAMActivate L9
+
