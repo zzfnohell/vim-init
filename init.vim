@@ -14,6 +14,7 @@ set softtabstop=4
 set foldmethod=syntax
 set hlsearch hls
 set number 
+set ic
 
 if has("gui_running")
   if has("gui_gtk2")
