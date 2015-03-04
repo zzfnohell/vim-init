@@ -52,4 +52,5 @@ call SetupVAM()
 VAMActivate fugitive
 VAMActivate AutoComplPop
 VAMActivate L9
+VAMActivate csv
 
