@@ -18,7 +18,7 @@ set ic
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Ubuntu\ Mono\:h12
+    set guifont=Ubuntu\ Mono\ 12
   elseif has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
