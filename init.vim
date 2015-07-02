@@ -15,7 +15,7 @@ set foldmethod=syntax
 set hlsearch hls
 set number 
 set ic
-autocmd BufAdd,BufNewFile * nested tab sball
+set autochdir
 
 if has("gui_running")
   if has("gui_gtk2")
