@@ -54,4 +54,5 @@ VAMActivate AutoComplPop
 VAMActivate L9
 VAMActivate csv
 VAMActivate fencview
-
+VAMActivate vim-snippets
+VAMActivate snipmate
