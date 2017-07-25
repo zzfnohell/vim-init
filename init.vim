@@ -1,9 +1,10 @@
 set nocompatible
-filetype on
+filetype off
 filetype plugin on
-filetype indent on
+
 syntax enable
 syntax on
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -27,32 +28,12 @@ if has("gui_running")
   endif
 endif
 
-fun! SetupVAM()
-  let c = get(g:, 'vim_addon_manager', {})
-  let g:vim_addon_manager = c
-  let c.plugin_root_dir = expand('$HOME', 1) . '/.vim/vim-addons'
+set rtp+=~/.vim/bundle/Vundle.vim
 
-  " Force your ~/.vim/after directory to be last in &rtp always:
-  " let g:vim_addon_manager.rtp_list_hook = 'vam#ForceUsersAfterDirectoriesToBeLast'
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+call vundle#end()
 
-  " most used options you may want to use:
-  " let c.log_to_buf = 1
-  " let c.auto_install = 0
-  let &rtp.=(empty(&rtp)?'':',').c.plugin_root_dir.'/vim-addon-manager'
-  if !isdirectory(c.plugin_root_dir.'/vim-addon-manager/autoload')
-    execute '!git clone --depth=1 git://github.com/MarcWeber/vim-addon-manager '
-        \       shellescape(c.plugin_root_dir.'/vim-addon-manager', 1)
-  endif
-
-  " This provides the VAMActivate command, you could be passing plugin names, too
-  call vam#ActivateAddons([], {})
-endfun
-call SetupVAM()
-
-" OPTION 1, use VAMActivate
-VAMActivate fugitive
-VAMActivate AutoComplPop
-VAMActivate L9
-VAMActivate csv
-VAMActivate fencview
+filetype plugin indent on 
 
