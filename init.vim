@@ -1,4 +1,7 @@
+set encoding=utf-8
 set nocompatible
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
 filetype off
 filetype plugin on
 
@@ -28,12 +31,14 @@ if has("gui_running")
   endif
 endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-call vundle#end()
+call plug#begin('~/.vim/plugged')
 
-filetype plugin indent on 
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'Valloric/YouCompleteMe'
+
+call plug#end()
+
+filetype plugin indent on
 
