@@ -28,12 +28,5 @@ if has("gui_running")
   endif
 endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-call vundle#end()
-
 filetype plugin indent on 
 
