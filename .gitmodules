@@ -1,5 +1,0 @@
-[submodule "vim/pack/plugins/start/YouCompleteMe"]
-	path = vim/pack/plugins/start/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-    ignore = dirty
-
