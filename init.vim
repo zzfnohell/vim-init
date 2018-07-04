@@ -20,6 +20,13 @@ set number
 set ic
 set autochdir
 
+let s:vimfiles_path = expand("~/vimfiles")
+
+if isdirectory(s:vimfiles_path)
+    let &g:rtp .= ','.s:vimfiles_path
+endif
+
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Ubuntu\ Mono\ 12
