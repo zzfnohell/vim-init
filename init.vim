@@ -18,12 +18,9 @@ set foldmethod=syntax
 set hlsearch hls
 set number 
 set ic
-set autochdir
 
-let s:vimfiles_path = expand("~/vimfiles")
-
-if isdirectory(s:vimfiles_path)
-    let &g:rtp .= ','.s:vimfiles_path
+if isdirectory(g:vimfiles_path)
+    let &g:rtp .= ','.g:vimfiles_path
 endif
 
 
