@@ -16,6 +16,7 @@ if [ ! -d pack/plugins/start/YouCompleteMe ]; then
   git clone https://github.com/Valloric/YouCompleteMe.git YouCompleteMe
   
   pushd YouCompleteMe
+  git submodule update --init --recursive
   python3 install.py --all
   popd 
   
