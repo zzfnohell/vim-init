@@ -19,6 +19,7 @@ set hlsearch hls
 set number 
 set ic
 
+
 if isdirectory(g:vimfiles_path)
     let &g:rtp .= ','.g:vimfiles_path
 endif
