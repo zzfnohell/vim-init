@@ -9,6 +9,16 @@
 *.fsproj merge=union
 *.dbproj merge=union
 
+
+.*              text eol=lf
+*.vim           text eol=lf
+.sh            text eol=lf
+*.txt           text eol=lf
+
+.projectile     text eol=lf
+.gitattributes  text eol=lf
+.gitmodules     text eol=lf
+
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
@@ -20,3 +30,9 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+
+
+
+
+

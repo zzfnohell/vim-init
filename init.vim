@@ -3,7 +3,6 @@ set nocompatible
 filetype off
 filetype plugin on
 
-colorscheme default
 syntax enable
 syntax on
 
