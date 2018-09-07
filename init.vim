@@ -20,7 +20,7 @@ set ic
 
 
 if isdirectory(g:vimfiles_path)
-    let &g:rtp .= ','.g:vimfiles_path
+   let &g:packpath = g:vimfiles_path . ',' . &g:packpath
 endif
 
 
