@@ -19,9 +19,10 @@ set number
 set ic
 
 
-if isdirectory(g:vimfiles_path)
-   let &g:packpath = g:vimfiles_path . ',' . &g:packpath
-endif
+
+" if isdirectory(g:vimfiles_path)
+"    let &g:packpath = g:vimfiles_path . ',' . &g:packpath
+" endif
 
 
 if has("gui_running")
