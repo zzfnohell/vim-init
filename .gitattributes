@@ -18,6 +18,7 @@
 .projectile     text eol=lf
 .gitattributes  text eol=lf
 .gitmodules     text eol=lf
+.gitignore      text eol=lf
 
 # Standard to msysgit
 *.doc	 diff=astextplain
