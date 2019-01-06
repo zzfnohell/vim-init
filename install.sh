@@ -5,6 +5,8 @@ fi
 
 pushd ~/vimfiles
 
+git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
+
 if [ ! -d pack/plugins/start/YouCompleteMe ]; then
   mkdir -p pack/plugins/start
 
