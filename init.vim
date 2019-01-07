@@ -39,3 +39,10 @@ if has('win32') || has('win64')
 endif
 filetype plugin indent on 
 
+call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+let g:jsx_ext_required = 1
+Plug 'mxw/vim-jsx'
+call plug#end()
