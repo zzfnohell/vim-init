@@ -34,6 +34,8 @@ if has("gui_running")
     set guifont=Ubuntu\ Mono:h12:cANSI
   endif
 endif
-
+if has('win32') || has('win64')
+    "" set rtp+=$USERPROFILE\vimfiles
+endif
 filetype plugin indent on 
 
