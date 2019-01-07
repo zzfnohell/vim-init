@@ -40,9 +40,22 @@ endif
 filetype plugin indent on 
 
 call plug#begin('~/.vim/plugged')
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+" Plug 'prabirshrestha/async.vim'
+"Plug 'prabirshrestha/vim-lsp'
+"Plug 'ryanolsonx/vim-lsp-typescript'
 
-let g:jsx_ext_required = 1
 Plug 'mxw/vim-jsx'
+let g:jsx_ext_required = 1
+
+Plug 'flowtype/vim-flow'
+
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
 call plug#end()
