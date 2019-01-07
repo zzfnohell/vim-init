@@ -57,5 +57,5 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
