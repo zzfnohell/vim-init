@@ -44,6 +44,8 @@ call plug#begin('~/.vim/plugged')
 "Plug 'prabirshrestha/vim-lsp'
 "Plug 'ryanolsonx/vim-lsp-typescript'
 
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
 Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 1
 
