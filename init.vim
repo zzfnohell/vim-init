@@ -61,4 +61,6 @@ let g:UltiSnipsJumpBackwardTrigger="<C-Up>"
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'jremmen/vim-ripgrep'
+Plug 'Chiel92/vim-autoformat'
+
 call plug#end()
