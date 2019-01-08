@@ -52,9 +52,10 @@ let g:jsx_ext_required = 1
 Plug 'flowtype/vim-flow'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<C-tab>"
+let g:UltiSnipsListSnippets="<C-S-tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-Down>"
+let g:UltiSnipsJumpBackwardTrigger="<C-Up>"
 
 
 Plug 'Valloric/YouCompleteMe'
