@@ -41,8 +41,8 @@ filetype plugin indent on
 
 call plug#begin('~/.vim/plugged')
 " Plug 'prabirshrestha/async.vim'
-"Plug 'prabirshrestha/vim-lsp'
-"Plug 'ryanolsonx/vim-lsp-typescript'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'ryanolsonx/vim-lsp-typescript'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -51,15 +51,14 @@ let g:jsx_ext_required = 1
 
 Plug 'flowtype/vim-flow'
 
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<C-tab>"
-let g:UltiSnipsListSnippets="<C-S-tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-Down>"
-let g:UltiSnipsJumpBackwardTrigger="<C-Up>"
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'garbas/vim-snipmate' | Plug 'honza/vim-snippets'
 
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
 
-Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'jremmen/vim-ripgrep'
 Plug 'Chiel92/vim-autoformat'
 
