@@ -40,8 +40,8 @@ endif
 filetype plugin indent on 
 
 call plug#begin('~/.vim/plugged')
-" Plug 'prabirshrestha/async.vim'
-" Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
 " Plug 'ryanolsonx/vim-lsp-typescript'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -55,9 +55,6 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'garbas/vim-snipmate' | Plug 'honza/vim-snippets'
-
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
 
 Plug 'jremmen/vim-ripgrep'
 Plug 'Chiel92/vim-autoformat'
