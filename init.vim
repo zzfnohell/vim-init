@@ -17,10 +17,13 @@ set foldmethod=syntax
 set hlsearch hls
 set number 
 set ic
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set encoding=utf-8
 
 " if isdirectory(g:vimfiles_path)
 "    let &g:packpath = g:vimfiles_path . ',' . &g:packpath
 " endif
+
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -33,4 +36,3 @@ if has("gui_running")
 endif
 
 filetype plugin indent on 
-
